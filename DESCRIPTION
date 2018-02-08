@@ -19,7 +19,7 @@ Depends:
   parallel,
   pbapply,
   ggplot2,
-  car,
+  caret,
   RColorBrewer,
   dummies
 RoxygenNote: 6.0.1
