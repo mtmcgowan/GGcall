@@ -1,4 +1,4 @@
-![title](https://github.com/mtmcgowan/GGcall/blob/master/GGcall%20oval.png)
+<img align="left" width="100" height="100" src="https://github.com/mtmcgowan/GGcall/blob/master/GGcall%20oval.png">
 # GGcall
 An R package for calling polyploid SNP chip data using Gaussian mixture models.
 
