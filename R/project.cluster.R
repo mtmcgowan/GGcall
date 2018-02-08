@@ -6,6 +6,7 @@
 #'
 #' @param project A project object, must be formatted correctly according to the project.create function
 #' @param data.type A string variable indicating which data should be used for clustering. ('raw', 'GSnorm','GStrans', 'thetaonly')
+#' @param marker.indices The indices of the markers to cluster
 #' @param iteration The number of times to re-cluster (can result in more stable results, but increases clustering time)
 #' @param model.list A list of Rmixmod models to use for cluster (Refer to Rmixmod documentation for more info)
 #' @param clust.num The maximum number of clusters to test for (lowering this speeds clustering time)
@@ -15,15 +16,15 @@
 # parallel, pbapply
 
 project.cluster <- function(project,
-                            marker_indices = NULL,
+                            marker.indices = NULL,
                             data.type = 'raw.scaled',
                             iteration = 5,
                             model.list = c("Gaussian_pk_L_Ck", "Gaussian_pk_L_Bk"),
                             clust.num = 8)
 {
-  if (is.null(marker_indices))
+  if (is.null(marker.indices))
   {
-    marker_indices = 1:length(project$markers)
+    marker.indices = 1:length(project$markers)
   }
   ##### Set up the parallel environment #####
   print('Setting up the parallel environment:')
@@ -45,7 +46,7 @@ project.cluster <- function(project,
 
   # Set up the progress bar
   do.pb <- dopb()
-  split <- splitpb(length(marker_indices), length(cl), nout = 100)
+  split <- splitpb(length(marker.indices), length(cl), nout = 100)
   B <- length(split)
   if (do.pb) {
     pb <- startpb(0, B)
