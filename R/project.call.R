@@ -20,7 +20,7 @@ project.call <-
            call.type = 'cat.all',
            min.prop = 0.01)
   {
-    if (call.type = 'cat.all')
+    if (call.type == 'cat.all')
     {
       genotype.matrix = matrix(
         NA,
