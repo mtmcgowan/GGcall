@@ -26,7 +26,7 @@ devtools::install_github("mtmcgowan/GGcall")
 ```
 ## Usage
 The easiest way to learn to use GGcall is to go through the tutorial provided here:
-[Guided Tutorial](https://github.com/mtmcgowan/GGcall/wiki/Guided-Tutorial)
+[Guided Tutorial](https://github.com/mtmcgowan/GGcall/wiki/Beginner-Tutorial)
 
 Depending on your population size and marker number, it may be useful to use a high-performance cluster to speed up the clustering step. Here is an example of how this was done for a cluster using the SLURM job scheduler:
 
