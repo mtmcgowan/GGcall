@@ -2,8 +2,9 @@
 #'
 #' Imports a Genome Studio data export file to only import useful information for clustering (theta, R, raw x, and raw y)
 #'
-#' @param exportpath the path to the GS data export
-#' @param data.type Whether to import raw values or Theta/R values
+#' @param exportpath the path to the GenomeStudio .txt data export
+#' @param raw Logical T/F: Whether to import raw data
+#' @param GSnorm Logical T/F: Whether to import GenomeStudio transformed/normalized data
 #'
 #' @return A project object containing a vector of marker names and a list of marker objects
 
@@ -15,12 +16,17 @@ project.import <- function(exportpath = NULL,
                            GSnorm = T)
 {
   # Set the data type variable
-  if (raw == T)
+  if (raw == T && GSnorm == F)
   {
-    data.type = "Raw"
-  }  else
+    data.type = "raw"
+  }
+    else if (raw == F && GSnorm == T)
+    {
+        data.type = "GS.transformed"
+    }
+    else
   {
-    data.type = "GS.transformed"
+    data.type = "ALL"
   }
 
   # hardcoded transformation method
