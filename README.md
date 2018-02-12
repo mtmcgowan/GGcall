@@ -16,16 +16,17 @@ A spreadsheet editor (Excel, OpenOffice-Calc, Numbers, etc.)
 
 ## Installation
 
+The easiest way to get GGcall is to install the package using devtools.
+If you don't have devtools already installed:
 ```{r, eval = FALSE}
-# The easiest way to get GGcall is to install the package using devtools:
-
-# If you don't have devtools already installed:
 install.packages("devtools")
-
-# Then load devtools and then install GGcall from Github:
+```
+Then, load devtools and then install GGcall from Github:
+```{r, eval = FALSE}
 library(devtools)
 devtools::install_github("mtmcgowan/GGcall")
 ```
+
 ## Usage
 The easiest way to learn to use GGcall is to go through the tutorial provided here:
 [Guided Tutorial](https://github.com/mtmcgowan/GGcall/wiki/Beginner-Tutorial)
