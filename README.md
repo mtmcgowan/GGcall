@@ -21,7 +21,7 @@ If you don't have devtools already installed:
 ```{r, eval = FALSE}
 install.packages("devtools")
 ```
-Then, load devtools and then install GGcall from Github:
+Load devtools and then install GGcall from Github:
 ```{r, eval = FALSE}
 library(devtools)
 devtools::install_github("mtmcgowan/GGcall")
