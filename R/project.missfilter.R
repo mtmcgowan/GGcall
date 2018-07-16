@@ -5,8 +5,7 @@
 #'
 #' @param project a project object from imported GenomeStudio data
 #'
-#' @param samp.miss The sample missing rate threshold where samples above the threshold will be removed (default = 0.2 i.e. 20% cutoff)
-#' @param mark.miss The marker missing rate threshold where samples above the threshold will be removed (default = 0.2 i.e. 20% cutoff)
+#' @param missrate The missing rate threshold where markers with a proportion of NA values above this threshold will be removed (default = 0.2 i.e. 20% cutoff)
 #' @return A project object with filter flags applied to markers
 #'
 

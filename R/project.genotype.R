@@ -4,10 +4,9 @@
 #'
 #' @param project A project object, must contain cluster information from the project.cluster function
 #' @param format If clusters were called using raw intensities or scaled raw intensities, should they be transformed to theta an R? (can be 'none' or 'transformed')
-#'
 #' @return A list of genotype information: 3 matrices corresponding to the cluster, the x/theta cluster center, the y/R cluster center, the specified format, and the data type used for clustering
 
-project.genotype <- function(project, clusters = F, format = "none")
+project.genotype <- function(project, format = "none")
 {
     # Get the type of model (either raw, raw.scaled, GS.norm, or GS.trans)
     model_type = project$markers[[1]]$model$data.type

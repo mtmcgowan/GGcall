@@ -7,8 +7,6 @@
 #' @param project A project object, must be formatted correctly according to the project.create function
 #' @param call.type A string variable indicating how to call clusters ('cat.all' = All markers w/ indicator expansion)
 #' @param min.prop The minimum proportion of the population for a cluster to be called
-#' @param model.list A list of Rmixmod models to use for cluster (Refer to Rmixmod documentation for more info)
-#' @param clust.num The maximum number of clusters to test for (lowering this speeds clustering time)
 #'
 #' @return A marker object updated with the best clustering result out of a defined number of iterations
 #'

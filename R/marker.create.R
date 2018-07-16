@@ -5,11 +5,15 @@
 #' @param name the marker ID
 #' @param x a vector of x.values
 #' @param y a vector of y.values
-#' @param x.adj a vector of adjusted x.values
-#' @param y.adj a vector of adjusted y.values
+#' @param x.scaled a vector of scaled x.values
+#' @param y.scaled a vector of scaled y.values
+#' @param R a vector of R values (either from GenomeStudio or calculated from raw values)
+#' @param theta a vector of theta values (either from GenomeStudio or calculated from raw values)
+#' @param theta.trans a vector of arcsin transformed values
 #' @param mixmodout cluster results from mixmodCluster
 #' @param miss.ind a vecor of missing value indices
 #' @param clust.time timing results for the clustering
+#' @param data.type Which data points were used for clustering
 #'
 #' @return An object storing all data for a single marker
 
