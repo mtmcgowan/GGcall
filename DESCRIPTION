@@ -18,6 +18,7 @@ Depends:
   Rmixmod,
   parallel,
   pbapply,
+  stringr,
   ggplot2,
   caret,
   RColorBrewer,
