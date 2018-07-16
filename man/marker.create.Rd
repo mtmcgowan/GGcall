@@ -16,15 +16,23 @@ marker.create(name = "NA", x = vector(), y = vector(),
 
 \item{y}{a vector of y.values}
 
+\item{x.scaled}{a vector of scaled x.values}
+
+\item{y.scaled}{a vector of scaled y.values}
+
+\item{R}{a vector of R values (either from GenomeStudio or calculated from raw values)}
+
+\item{theta}{a vector of theta values (either from GenomeStudio or calculated from raw values)}
+
+\item{theta.trans}{a vector of arcsin transformed values}
+
 \item{mixmodout}{cluster results from mixmodCluster}
 
 \item{miss.ind}{a vecor of missing value indices}
 
 \item{clust.time}{timing results for the clustering}
 
-\item{x.adj}{a vector of adjusted x.values}
-
-\item{y.adj}{a vector of adjusted y.values}
+\item{data.type}{Which data points were used for clustering}
 }
 \value{
 An object storing all data for a single marker

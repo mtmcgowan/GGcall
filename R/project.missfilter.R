@@ -1,13 +1,12 @@
 #' project.missfilter
-#' @title scrub.GSdata
 #'
-#' @description Checks for problematic samples and markers. Samples with a set missing rate are flagged. Markers with zero-variance (either all theta or R values are the same) are also flagged for removal.
+#' Checks for problematic samples and markers. Samples with a set missing rate are flagged. Markers with zero-variance (either all theta or R values are the same) are also flagged for removal.
 #'
 #' @param project a project object from imported GenomeStudio data
+#' @param missrate The missing rate threshold where markers with a proportion of NA values above this threshold will be removed (default = 0.2 i.e. 20\% cutoff)
+#' @param type Which type of data should be check. GenomeStudio theta/R values will have more missing values than the raw X/Y. (either 'raw' or 'GSnorm')
 #'
-#' @param missrate The missing rate threshold where markers with a proportion of NA values above this threshold will be removed (default = 0.2 i.e. 20% cutoff)
 #' @return A project object with filter flags applied to markers
-#'
 
 
 project.missfilter <- function(project, missrate = 0.2, type = 'raw') {

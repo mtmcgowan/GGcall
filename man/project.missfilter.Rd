@@ -2,23 +2,20 @@
 % Please edit documentation in R/project.missfilter.R
 \name{project.missfilter}
 \alias{project.missfilter}
-\title{scrub.GSdata}
+\title{project.missfilter}
 \usage{
 project.missfilter(project, missrate = 0.2, type = "raw")
 }
 \arguments{
 \item{project}{a project object from imported GenomeStudio data}
 
-\item{samp.miss}{The sample missing rate threshold where samples above the threshold will be removed (default = 0.2 i.e. 20% cutoff)}
+\item{missrate}{The missing rate threshold where markers with a proportion of NA values above this threshold will be removed (default = 0.2 i.e. 20\% cutoff)}
 
-\item{mark.miss}{The marker missing rate threshold where samples above the threshold will be removed (default = 0.2 i.e. 20% cutoff)}
+\item{type}{Which type of data should be check. GenomeStudio theta/R values will have more missing values than the raw X/Y. (either 'raw' or 'GSnorm')}
 }
 \value{
 A project object with filter flags applied to markers
 }
 \description{
 Checks for problematic samples and markers. Samples with a set missing rate are flagged. Markers with zero-variance (either all theta or R values are the same) are also flagged for removal.
-}
-\details{
-project.missfilter
 }

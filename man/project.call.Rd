@@ -12,10 +12,6 @@ project.call(project, call.type = "cat.all", min.prop = 0.01)
 \item{call.type}{A string variable indicating how to call clusters ('cat.all' = All markers w/ indicator expansion)}
 
 \item{min.prop}{The minimum proportion of the population for a cluster to be called}
-
-\item{model.list}{A list of Rmixmod models to use for cluster (Refer to Rmixmod documentation for more info)}
-
-\item{clust.num}{The maximum number of clusters to test for (lowering this speeds clustering time)}
 }
 \value{
 A marker object updated with the best clustering result out of a defined number of iterations
