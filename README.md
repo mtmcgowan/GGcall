@@ -1,4 +1,7 @@
-<img align="center" src="https://github.com/mtmcgowan/GGcall/blob/master/GGcall_oval.png">
+Inline-style: 
+![alt text](https://github.com/mtmcgowan/GGcall/blob/master/GGcall_oval.png "GGcall Logo")
+
+#<img align="center" src="https://github.com/mtmcgowan/GGcall/blob/master/GGcall_oval.png">
 # GGcall: Gaussian Genotype Calling
 
 An R package for calling polyploid SNP chip data using Gaussian mixture models.
