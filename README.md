@@ -36,3 +36,9 @@ Depending on your population size and marker number, it may be useful to use a h
 ## Getting help
 
 The best way to get help is to submit an issue on Github. Before submitting, be sure to clearly describe the problem and provide a reproducible example.
+
+## More Information
+
+An earlier version of GGcall was presented at the 2018 Plant and Animal Genome Conference. Here is a poster that provides more information for how it works:
+
+[](https://github.com/mtmcgowan/GGcall/PAG2018_McGowanPoster.png)
