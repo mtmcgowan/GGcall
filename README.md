@@ -41,4 +41,4 @@ The best way to get help is to submit an issue on Github. Before submitting, be 
 
 An earlier version of GGcall was presented at the 2018 Plant and Animal Genome Conference. Here is a poster that provides more information for how it works:
 
-![](https://github.com/mtmcgowan/GGcall/PAG2018_McGowanPoster.png)
+![PAG poster](https://github.com/mtmcgowan/GGcall/PAG2018_McGowanPoster.png)
